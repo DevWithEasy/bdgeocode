@@ -23,7 +23,7 @@ export default function Home() {
                 <p className='text-center text-xl'>Divisons</p>
                 <p>Get all divisons data</p>
                 <p className='py-1'>
-                  <span className='underline underline-offset-4'>https://bdgeocode/api/divison</span>
+                  <span className='underline underline-offset-4'>https://bdgeocode.vercel.app/api/divison</span>
                 </p>
               </div>
 
@@ -32,13 +32,13 @@ export default function Home() {
                 <div className='my-1'>
                   <p>Get all districts data</p>
                   <p className=''>
-                    <span className='underline underline-offset-4'>https://bdgeocode/api/district</span>
+                    <span className='underline underline-offset-4'>https://bdgeocode.vercel.app/api/district</span>
                   </p>
                 </div>
                 <div className='my-1'>
                   <p>Get all districts of an division</p>
                   <p className=''>
-                    <span className='underline underline-offset-4'>https://bdgeocode/api/district</span>
+                    <span className='underline underline-offset-4'>https://bdgeocode.vercel.app/api/district</span>
                     <span className='underline underline-offset-4 bg-white'>/:divisionId</span>
                   </p>
                 </div>
@@ -49,13 +49,13 @@ export default function Home() {
                 <div className='my-1'>
                   <p>Get all upazillas data</p>
                   <p className=''>
-                    <span className='underline underline-offset-4'>https://bdgeocode/api/district</span>
+                    <span className='underline underline-offset-4'>https://bdgeocode.vercel.app/api/district</span>
                   </p>
                 </div>
                 <div className='my-1'>
                   <p>Get all upazillas of an districts</p>
                   <p className=''>
-                    <span className='underline underline-offset-4'>https://bdgeocode/api/district</span>
+                    <span className='underline underline-offset-4'>https://bdgeocode.vercel.app/api/district</span>
                     <span className='underline underline-offset-4 bg-white'>/:districtId</span>
                   </p>
                 </div>
@@ -66,13 +66,13 @@ export default function Home() {
                 <div className='my-1'>
                   <p>Get all unions data</p>
                   <p className=''>
-                    <span className='underline underline-offset-4'>https://bdgeocode/api/district</span>
+                    <span className='underline underline-offset-4'>https://bdgeocode.vercel.app/api/district</span>
                   </p>
                 </div>
                 <div className='my-1'>
                   <p>Get all unions of an upazilla</p>
                   <p className=''>
-                    <span className='underline underline-offset-4'>https://bdgeocode/api/district</span>
+                    <span className='underline underline-offset-4'>https://bdgeocode.vercel.app/api/district</span>
                     <span className='underline underline-offset-4 bg-white'>/:upazillaId</span>
                   </p>
                 </div>
