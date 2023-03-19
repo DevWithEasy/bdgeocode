@@ -1,6 +1,6 @@
 export default function ApiLink(){
     return(
-        <div className='bg-white/80'>
+        <div className='w-4/12 bg-white/80'>
                 <div className='p-2'>
                   <p className='bg-gradient-to-r from-green-600/40 to-red-500/40 rounded-tl-full rounded-br-full text-center text-xl text-white font-bold'>Divisons</p>
                   <p>Get all divisons data</p>

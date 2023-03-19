@@ -1,9 +1,18 @@
+import axios from 'axios'
 import Head from 'next/head'
 import ApiLink from '../components/ApiLink'
 import SelectList from '../components/SelectList'
 
-export default function Home() {
-  
+export async function getServerSideProps(context) {
+  const res = await axios.get('https://bdapi.vercel.app/api/v.1/division')
+  return {
+    props: {
+      data : res.data.data
+    },
+  }
+}
+
+export default function Home({data}) {
 
   return (
     <>
@@ -26,7 +35,7 @@ export default function Home() {
               <div className='w-4/12'>
 
               </div>
-              <SelectList/>
+              <SelectList divisions={data}/>
               <ApiLink/>
             </div>
           </div>

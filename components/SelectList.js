@@ -1,22 +1,11 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { getDistricts, getUnions, getUpazillas } from '../utils/getHandler';
 
-const SelectList = () => {
-  const [divisions,setDivisions] = useState([])
+const SelectList = ({divisions}) => {
   const [districts,setDistricts] = useState([])
   const [upazillas,setUpazillas] = useState([])
   const [unions,setUnions] = useState([])
 
-  async function getDivisions(){
-    const res = await axios.get('https://bdgeocode.vercel.app/api/v.1/division')
-    setDivisions(res.data.data);
-  }
-
-
-  useEffect(()=>{
-    getDivisions()
-  },[])
     return (
         <div className='w-4/12 space-y-2 pt-5'>
                   <div className='flex justify-between w-full space-x-2'>
@@ -85,6 +74,10 @@ const SelectList = () => {
                             {division.bn_name}
                         </option>)}
                     </select>
+                  </div>}
+
+                  {districts.length > 0 && <div className='flex justify-end'>
+                        <button className='py-2 px-6 rounded-md bg-red-500 text-white' onClick={()=>{setDistricts([]);setUpazillas([]);setUnions([])}}>Reset</button>
                   </div>}
               </div>
     );
